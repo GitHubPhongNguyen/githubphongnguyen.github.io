@@ -103,6 +103,7 @@ body {
 }
 
 .header__button {
+  display: block;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -111,15 +112,12 @@ body {
   background-color: #E76F51;
   padding: 13px 63px;
   border-radius: 25px;
+  color: white;
 }
 
 .header__button:hover {
   -webkit-box-shadow: 0px 0px 36px #E76F51;
           box-shadow: 0px 0px 36px #E76F51;
-}
-
-.header__button a {
-  color: white;
 }
 
 @media screen and (min-width: 768px) {

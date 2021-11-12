@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div:not(*) {
+  line-height: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  /* colors */
+  --primary-color: #222141;
+  --second-color: #141537;
+  --third-color: #964b25;
+  --neutral-color: #272962;
+  --text-color: #838294;
+
+  /* typography */
+  --text-typo: "Roboto", sans-serif;
+  --big-font-size: 40px;
+  --normal-font-size: 16px;
+  --small-font-size: 13px;
+}
+
+body {
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--text-typo);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+  flex-direction: column;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: var(--second-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 20px 60px rgba(11, 10, 29, 80),
+    -20px -20px 60px var(--neutral-color);
+  margin-bottom: 40px;
+  margin-top: 120px;
+}
+
+.circle-text {
+  color: white;
+  font-size: var(--big-font-size);
+}
+
+.table-time {
+  background-color: var(--second-color);
+  border-radius: 20px;
+  display: block;
+  padding: 24px 20px;
+  min-width: 200px;
+  max-width: 400px;
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  overflow-y: scroll;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.table-time::-webkit-scrollbar {
+  display: none;
+}
+
+.table-time-item {
+  display: flex;
+  color: rgba(255, 255, 255, 80);
+  font-size: var(--small-font-size);
+  padding-bottom: 4px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #838294;
+}
+
+.table-time-item--active {
+  color: var(--third-color);
+  border-bottom: 1px solid var(--third-color);
+}
+
+/* button */
+.btn {
+  outline: none;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  border-radius: 80px;
+  padding: 12px 40px;
+  cursor: pointer;
+}
+
+.btn--important {
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+}
+
+.time-button {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  flex-direction: column;
+}
+.time-button-top {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.time-button-bottom {
+  display: flex;
+  justify-content: space-between;
+}

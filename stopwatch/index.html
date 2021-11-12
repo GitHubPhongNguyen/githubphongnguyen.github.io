@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./source/style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle">
+        <div class="circle-text">
+          <span class="circle-minute">01</span>:
+          <span class="circle-second">02</span>:
+          <span class="circle-milisecond">11</span>
+        </div>
+      </div>
+      <ul class="table-time">
+        <li class="table-time-item table-time-item--active">
+          <span class="key">LAP1</span>
+          <span class="value">11:21:12</span>
+        </li>
+        <li class="table-time-item">
+          <span class="key">LAP2</span>
+          <span class="value">11:21:12</span>
+        </li>
+        <li class="table-time-item">
+          <span class="key">LAP3</span>
+          <span class="value">11:21:12</span>
+        </li>
+        <li class="table-time-item">
+          <span class="key">LAP4</span>
+          <span class="value">11:21:12</span>
+        </li>
+        <li class="table-time-item">
+          <span class="key">LAP4</span>
+          <span class="value">11:21:12</span>
+        </li>
+        <li class="table-time-item">
+          <span class="key">LAP4</span>
+          <span class="value">11:21:12</span>
+        </li>
+        <li class="table-time-item">
+          <span class="key">LAP4</span>
+          <span class="value">11:21:12</span>
+        </li>
+      </ul>
+      <div class="time-button">
+        <div class="time-button-top">
+          <button class="btn" id="btn-restart">RESTART</button>
+        </div>
+        <div class="time-button-bottom">
+          <button class="btn" id="btn-start">START</button>
+          <button class="btn btn--important" id="btn-stop">STOP</button>
+        </div>
+      </div>
+    </div>
+    <script src="./source/js/app.js"></script>
+  </body>
+</html>
